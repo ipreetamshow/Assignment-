@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS task-7</title>
+    <style>
+        .out{
+            
+            background-color: brown;
+            margin: 80px 80px 80px 80px;
+            padding: 10px 90px 10px 90px;
+        }
+        form{
+            margin: 10px 80px 10px 80px;
+            background-color: rgb(100, 25, 25);
+            padding:  20px 90px 20px 90px;
+          
+        }
+        input[type=submit]{
+                margin-left:240px ;
+                border-radius: 10px;
+                padding: 10px;
+                font-weight: bolder;
+                width: 45%;
+        }
+        input[type=text],input[type=password],input[type=tel],input[type=email],input[type=number]{
+            width: 300px;
+            padding: 5px;
+        }
+        label{
+            margin-left: 200px;
+            color: white;
+            display: inline-block;
+            width: 150px;
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif;
+            
+        }
+        select{
+            background-color: rgba(255, 255, 255, 0.89);
+            height: 30px;
+            padding: 3px;
+            width: 170px;
+        }
+    </style>
+</head>
+<body>
+    <div class="out">
+    <form action="submitpage.html">
+        <label for="name">Name:</label>
+        <input type="text" placeholder="your name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="your email"><br><br>
+        <label for="password">Password:</label>
+        <input type="password"><br><br>
+        <label for="Phone number">Phone number:</label>
+        <input type="tel"><br><br>
+        <label for="gender">Gender:</label>
+        <label for="m" style="margin-right: 10px !important; margin-left: 0px !important; width: 30px !important;" >Male:</label>        
+        <input type="radio" name="gender">
+        <label for="f" style="margin-right: 10px !important; margin-left: 10px !important; width: 45px !important;">Female:</label>        
+        <input type="radio" name="gender">
+        <label for="o" style="margin-right: 10px !important;  margin-left: 10px !important; width: 40px !important;">Others:</label>
+        <input type="radio" name="gender"><br><br>
+        <label for="language">Language:</label>
+        <select name="lan" id="lan">
+            <option value="Select language">Select language</option>
+            <option value="telugu">telugu</option>
+            <option value="hindi">hindi</option>
+            <option value="tamil">tamil</option>
+            <option value="English">English</option>
+        </select><br><br>
+        <label for="Zip code">Zip Code:</label>
+        <input type="number"><br><br>
+        <label for="About" >About:</label>
+        <textarea name="about" id="about" cols="40" rows="3" placeholder="Write about yourself..."></textarea><br><br>
+        <input type="submit" value="Register" style="font-weight: bolder; font-size: large;">
+        
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html task 4</title>
+    <style>
+       form{
+        margin: 200px 500px;
+        width: 500px;
+       }
+       label{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 2px;
+            display: inline-block;
+            width: 160px;
+       }
+       
+       .btn{
+        width: 80px !important;
+       }
+       input,select{
+        width: 200px;
+        padding: 5px;
+        margin-bottom: 10px;
+       }
+      
+    </style>
+</head>
+<body>
+    <form action="submitpage.html">
+        <label for="fn">Full Name:</label>
+        <input  type="text"/><br>
+        <label for="un">Username:</label>
+        <input type="text" name="un"><br>
+        <label for="pw">Password:</label>
+        <input type="password"><br>
+        <label for="rpw">Re Password:</label>
+        <input type="password"><br>
+        <label for="adr">Address:</label>
+        <input type="text"><br>
+        <label for="age">Age:</label>
+        <input type="number"><br>
+        <label for="gn">Gender:</label>
+        <select name="gn" id="gn">
+            <option value="m">Male</option>
+            <option value="f">Female</option>
+            <option value="n">Not to mention</option>
+        </select><br><br>
+        <input type="submit" value="Save" class="btn">
+    
+    </form>
+</body>
+</html>
